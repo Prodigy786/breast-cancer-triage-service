@@ -4,7 +4,7 @@
 **Institution:** FAST National University of Computer & Emerging Sciences  
 **Student Name:** [Your Name]  
 **Roll Number:** [Your Roll Number]  
-**GitHub Repository:** [Insert Link to Public GitHub Repo]  
+**GitHub Repository:** https://github.com/Prodigy786/breast-cancer-triage-service  
 **Docker Hub Repository:** [Insert Link to Public Docker Hub Repo]  
 
 ---

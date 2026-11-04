@@ -18,6 +18,7 @@ from app.schemas import (
     StatsResponse,
 )
 
+# Cache validation edit for Milestone 3 production build test
 # Configuration from environment variables
 MODEL_PATH = os.getenv("MODEL_PATH", "artifacts/model.joblib")
 DECISION_THRESHOLD = float(os.getenv("DECISION_THRESHOLD", "0.5"))

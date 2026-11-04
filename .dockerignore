@@ -1,0 +1,27 @@
+# Git
+.git/
+.gitignore
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# DVC cache and temp
+.dvc/cache/
+.dvc/tmp/
+dvc-remote/
+
+# Documentation and report drafts
+*.md
+!README.md
+tests/
+MLOps_*.pdf
+test_html/

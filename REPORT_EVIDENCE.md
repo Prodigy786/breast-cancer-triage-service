@@ -5,7 +5,7 @@
 **Student Name:** [Your Name]  
 **Roll Number:** [Your Roll Number]  
 **GitHub Repository:** https://github.com/Prodigy786/breast-cancer-triage-service  
-**Docker Hub Repository:** [Insert Link to Public Docker Hub Repo]  
+**Docker Hub Repository:** https://hub.docker.com/r/student3446/breast-cancer-triage-api  
 
 ---
 

@@ -1,0 +1,26 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# DVC
+.dvc/cache
+.dvc/tmp
+
+# Model artifacts (generated during training)
+artifacts/
+
+# OS generated files
+.DS_Store
+Thumbs.db

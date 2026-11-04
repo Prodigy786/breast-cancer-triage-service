@@ -1,0 +1,32 @@
+services:
+  redis:
+    image: redis:7.2-alpine
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 2s
+
+  api:
+    image: ${DOCKERHUB_USERNAME}/breast-cancer-triage-api:${IMAGE_TAG:-1.0.0}
+    restart: unless-stopped
+    ports:
+      - "${HOST_PORT:-8000}:8000"
+    environment:
+      MODEL_PATH: /app/artifacts/model.joblib
+      DECISION_THRESHOLD: ${DECISION_THRESHOLD:-0.5}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      REDIS_HOST: ${REDIS_HOST:-redis}
+      REDIS_PORT: ${REDIS_PORT:-6379}
+      MODEL_VERSION: ${MODEL_VERSION:-1.0.0}
+      GIT_SHA: ${GIT_SHA:-unknown}
+    depends_on:
+      redis:
+        condition: service_healthy
+
+volumes:
+  redis_data:

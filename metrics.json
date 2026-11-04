@@ -1,0 +1,9 @@
+{
+  "selected_model": "LogisticRegression",
+  "test_malignant_recall": 0.9512195121951219,
+  "test_accuracy": 0.9722222222222222,
+  "test_roc_auc": 0.9989078995267565,
+  "cv_malignant_recall": 0.9575757575757576,
+  "cv_accuracy": 0.9791499599037691,
+  "cv_roc_auc": 0.9941744488914301
+}
